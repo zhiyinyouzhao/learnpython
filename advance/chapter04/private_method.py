@@ -1,4 +1,7 @@
 
+'''
+
+'''
 
 from chapter04.class_method import Date
 
@@ -12,6 +15,8 @@ class User:
 
 if __name__ == '__main__':
     user = User(Date(1990,2,1))
-    print(user.__birthday)
+    #私有属性无法通过.获取
+    # print(user.__birthday)
+    #pytho实际上会把__birthday变形为_classname__attr
     print(user._User__birthday)
     print(user.get_age())
