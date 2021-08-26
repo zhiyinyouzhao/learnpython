@@ -17,10 +17,10 @@ class Student(Person):
 if __name__ == '__main__':
     user = Student("慕课网")
     # 通过__dict__查询属性
-    # print(user.__dict__)
+    print(user.__dict__)
+    print(Person.__dict__)
+    print(user.name)
     # user.__dict__["school_addr"] = "北京市"
     # print(user.school_addr)
     # print(user.name)
     # print(Person.__dict__)
-
-    print(dir(user))
