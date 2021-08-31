@@ -1,4 +1,11 @@
-#set 集合fronzenset（不可变集合）无序;不重复
+
+
+'''
+1.set 集合
+2.fronzenset（不可变集合）
+3.无序;不重复
+'''
+
 
 # s = set('abcde')
 # print(s)
@@ -20,4 +27,4 @@ print(re_set1)
 print(re_set2)
 print(re_set3)
 
-# / & - 集合运算
+#"/ & - 集合运算

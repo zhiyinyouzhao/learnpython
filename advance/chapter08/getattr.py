@@ -5,14 +5,16 @@ from datetime import date,datetime
 
 
 class User:
-    def __init__(self,name,birthday):
+    def __init__(self,name,birthday,info={}):
         self.name = name
         self.birthday = birthday
+        self.info = info
+
 
     def __getattr__(self, item):
-        return "not find attr"
+        return self.info[item]
 
 
 if __name__ == '__main__':
-    user = User("bobby",date(year=1987,month=1,day=1))
-    print(user.age)
+    user = User("bobby",date(year=1987,month=1,day=1),info={"company_name":"imoc","11":"abc"})
+    print(user.company_name)

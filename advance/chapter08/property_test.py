@@ -9,6 +9,7 @@ class User:
     # def get_age(self):
     #     return datetime.now().year-self.birthday.year
 
+    #property 把age函数变为属性描述符
     @property
     def age(self):
         return datetime.now().year-self.birthday.year
