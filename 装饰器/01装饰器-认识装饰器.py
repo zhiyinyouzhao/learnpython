@@ -33,6 +33,7 @@ def outer(f):
         f()
         print('我是外函数中的内涵数2')
     return inner
+
 #改为装饰器用法
 @outer            #此处使用@outer的语法就是把outer作为装饰器，等同于old=outer(old)
 def old():

@@ -15,7 +15,7 @@ class Outer():
 
 
 
-@Outer()            #outer() ==> obj @obj ==>obj(love) ==> __call__(love) ==> inner()
+#@Outer()            #outer() ==> obj @obj ==>obj(love) ==> __call__(love) ==> inner()
 def love(who):
     print(f'{who}和妹子谈谈人生和理想...')
 
@@ -23,4 +23,7 @@ def love(who):
 
 
 if __name__ == '__main__':
-    love('张三')
+    #love('张三')
+    obj = Outer()
+    love = obj(love)
+    love('思思')

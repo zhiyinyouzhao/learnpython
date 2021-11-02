@@ -11,6 +11,7 @@ def kuozhan(var):
         def inner2():
             print('妹子给介绍了个大妈')
             f()
+        #装饰器壳的函数，用于在函数内去做流程控制
         if var == '高富帅':
             return inner1
         else:
@@ -23,8 +24,7 @@ def love():
     print('谈谈人生')
 
 if __name__ == '__main__':
-    a = kuozhan('高富帅')
-    # love()      #kuozhan(var) ==》 outer() ==> outer(love) ==> inner()
-    b = a(love)
-    # print(b)
-    b()
+    love()                       #kuozhan(var) ==》 outer() ==> outer(love) ==> inner()
+    # a = kuozhan('高富帅')
+    # love = a(love)
+    # love()

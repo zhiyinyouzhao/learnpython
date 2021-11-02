@@ -17,3 +17,5 @@ def love(name):
 
 if __name__ == '__main__':
     love('思思')
+    # love = outer(love)
+    # love('思思')

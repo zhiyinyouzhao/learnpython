@@ -20,10 +20,17 @@ def kuozhan(f):
 def love():
     print('跟妹子畅谈人生和理想...5')
 
-love = outer(love)     #love = inner
-love = kuozhan(love)   #love = kuozhaninner
+#love = outer(love)     #love = inner
+#love = kuozhan(love)   #love = kuozhaninner
 if __name__ == '__main__':
+    # love = outer(love)
+    # love = kuozhan(love)
     love()
+
+    '''
+    1-3-5-4-2
+    '''
+
     '''
     执行顺序：1,3,5,4,2
     1，先使用离得近的outer装饰器，装饰love函数，返回了一个inner函数

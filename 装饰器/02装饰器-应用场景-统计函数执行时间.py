@@ -17,6 +17,6 @@ def func():
 
 
 if __name__ == '__main__':
-    # func = outer(func)
+    #func = outer(func)
     print(func())
 
