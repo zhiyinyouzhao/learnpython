@@ -28,29 +28,32 @@ f4 = ['赵四','刘能','小沈阳','海参炒面']
 
 #for循环
 for i in f4:
-    print(i)
+    pass
+    #print(i)
 
-res = iter(f4)
-#1.可以把可迭代对象转为迭代器使用，使用next()函数去调用迭代器对象
+#使用iter（）可以把可迭代对象转为迭代器使用
+# res = iter(f4)
+# print(res,type(res))
+#1.使用next()函数去调用迭代器对象
 # r = next(res)
 # print(r)
 
 # 2.list
 # r = list(res)
-# print(r)
+# print(r,type(r))
 
 # 3.for
-for j in res:
-    print(j)
-
-
+# for j in res:
+#     print(j)
+#
+#
 varstr = '123456'
 res = iter(varstr)
-
-r1 = isinstance(varstr,Iterable)
-r2 = isinstance(varstr,Iterator)
-r3 = isinstance(res,Iterable)
-r4 = isinstance(res,Iterator)
+#
+r1 = isinstance(varstr,Iterable)    #True
+r2 = isinstance(varstr,Iterator)    #False
+r3 = isinstance(res,Iterable)       #True
+r4 = isinstance(res,Iterator)       #True
 print(r1)
 print(r2)
 print(r3)
