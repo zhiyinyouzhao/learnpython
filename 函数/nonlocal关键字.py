@@ -12,7 +12,6 @@ def outer():
     num = 10
     # 内函数，局部函数，在函数的内部定义的函数
     def inner():
-        # print(num)
         nonlocal num  #可以引用上一层函数中定义的局部变量，但依然不能提升为全局变量
         num += 1
         print(num)

@@ -9,17 +9,23 @@ varlist = ['刘德华','张学友','张国荣','黎明','郭富城','小沈阳',
 '''
 # 从开始索引到最后
 res1 = varlist[2:]
+print(res1)
 # 从开头到指定的结束索引之前
 res2 = varlist[:2]
+print(res2)
 # 从开始索引到指定结束索引之前
 res3 = varlist[2:6]
+print(res3)
 # 从指定索引开始到指定索引前结束，按照指定的步进进行切片取值
 res4 = varlist[2:6:2]
+print(res4)
 res5 = varlist[:]
+print(res5)
 res6 = varlist[::]
+print(res6)
 # 倒着获取列表
-res6 = varlist[::-2]
-# print(res6)
+res7 = varlist[::-2]
+print(res7)
 
 
 

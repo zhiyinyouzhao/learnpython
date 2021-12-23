@@ -23,4 +23,5 @@ varlist1.append('ff')
 # 删除元素
 del varlist2[2]
 varlist2.pop()  # 弹出最后一个元素
+print(varlist2)
 

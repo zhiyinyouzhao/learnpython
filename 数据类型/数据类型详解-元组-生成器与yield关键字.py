@@ -1,12 +1,18 @@
 
 '''
     yield关键字使用在生成器函数中
-        1.yidle和函数中的return有点像
+        1.yield和函数中的return有点像
         2.共同点：执行到这个关键字后会把结果返回
         3.不同的：
                 1.return 会把结果返回，并结束当前函数的调用
                 2.yield 会把结果返回，并记住当前代码执行的位置，下一次调用时会从上一次离开的位置继续向下执行
 '''
+
+'''
+在Python中，一边循环一边计算的机制，称为生成器：generator。
+跟普通函数不同的是，生成器是一个返回迭代器的函数，只能用于迭代操作，更简单点理解生成器就是一个迭代器，生成器本质就是迭代器
+'''
+
 
 
 # 使用yield定义一个生成器函数
@@ -18,17 +24,24 @@ def hello():
     print('haha 3')
     yield 3
 
-#调用生成器函数，返回一个迭代器
+#调用一个生成器函数，返回的是一个生成器对象
 res = hello()
-r = next(res)
-print(r)
-r = next(res)
-print(r)
+print(res,type(res))
+# r = next(res)
+# print(r)
+# r = next(res)
+# print(r)
+# r = next(res)
+# print(r)
 
 # 使用list类似的函数去调用生成器返回的迭代器时，会把迭代器的返回结果，作为容器的元素
-print(list(res))
+#print(list(res))
 
 #for循环
+
+for n in res:
+    print(n)
+
 
 '''
     上面生成器函数调用时的过程：
