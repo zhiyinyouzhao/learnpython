@@ -1,7 +1,4 @@
 
-
-
-
 '''
 封装的级别
                 公有的public           受保护的protected           私有的private
@@ -11,6 +8,10 @@
 成员:公有的
 _成员 :受保护的（约定俗称，python没有实现）
 __成员:私有的(可以使用特殊语法获取)
+
+了解即可：
+在python中给成员进行私有化，其实就是改了成员的名字
+私有化 ==》 _类名__成员
 '''
 
 
@@ -38,7 +39,7 @@ class Person():
 
 if __name__ == '__main__':
     ym = Person('杨幂',28,'70 50 60')
-    # print(ym.__dict__)    #可以获取当前对象的所以成员信息
-    # print(Person.__dict__) #可以获取当前类的所以成员信息
+    # print(ym.__dict__)    #可以获取当前对象的所有成员信息
+    # print(Person.__dict__) #可以获取当前类的所有成员信息
     print(ym._age)  #在类的外部不能操作，受保护的成员，但python可以
     ym.kiss()

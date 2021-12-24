@@ -41,7 +41,9 @@ if __name__ == '__main__':
     zs = Person()
     print(zs.name)
     print(zs)
+    print("==================")
     zs.func()
+
     print(zs.name)
     print(Person.name)
     print(Person.func2())

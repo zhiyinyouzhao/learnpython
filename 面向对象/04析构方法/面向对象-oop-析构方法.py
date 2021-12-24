@@ -15,7 +15,6 @@ class writeLog():
         print('正在写入:%s' %s)
 
     #析构方法
-
     def __del__(self):
         print('析构方法触发了')
         # 在对象被销毁时，关闭在初始化方法中打开的文件对象
@@ -23,13 +22,14 @@ class writeLog():
 
 
 if __name__ == '__main__':
+    #1.
     # l = writeLog()
     # l.log("今天天气还不错")
     # print(',,,,,,,,,,,')
 
-    # writeLog()
+    #2
+    # l = writeLog()
+    # del l
 
-    l = writeLog()
-    del l
-
+    pass
 
