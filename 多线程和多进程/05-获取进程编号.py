@@ -7,27 +7,25 @@ import os
 
 # 唱歌
 def sing(num,name):
-    print '唱歌进程的pid:',os.getpid()
-    print '唱歌进程的父进程pid:', os.getppid()
+    print('唱歌进程的pid:',os.getpid())
+    print('唱歌进程的父进程pid:', os.getppid())
     for i in range(num):
-        print name
-        print "唱歌..."
+        print("%s唱歌..." %name)
         time.sleep(0.5)
 
 # 跳舞
 def dance(num,name):
-    print '跳舞进程的pid:',os.getpid()
+    print('跳舞进程的pid:',os.getpid())
     # windows 没有getppid函数
-    print os.getppid()
+    print('跳舞进程的父进程pid:', os.getppid())
     #print '跳舞进程的父进程pid:',os.getppid()
     for i in range(num):
-        print name
-        print "跳舞..."
+        print("%s跳舞..." %name)
         time.sleep(0.5)
 
 
 if __name__ == '__main__':
-    print '主进程的pid:',os.getpid()
+    print('主进程的pid:',os.getpid())
     # 2.使用进程类创建进程对象
     # target:指定进程执行的函数名
     # args:使用元祖方式给指定任务传参

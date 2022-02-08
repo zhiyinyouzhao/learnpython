@@ -7,13 +7,13 @@ import multiprocessing
 # 唱歌
 def sing(num):
     for i in range(num):
-        print "唱歌..."
+        print("唱歌...")
         time.sleep(0.5)
 
 # 跳舞
 def dance(num):
     for i in range(num):
-        print "跳舞..."
+        print("跳舞...")
         time.sleep(0.5)
 
 
