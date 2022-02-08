@@ -2,8 +2,9 @@
 
 class Outer():
 
-    #魔术方法：放把该类对象当作函数调用时，自动触发obj()
+    #魔术方法：该方法把该类对象当作函数调用时，自动触发obj()
     def __call__(self, func):
+        print("触发了__call__方法",func)
         self.func = func   #把传进来的函数作为对象的成员方法
         return self.inner   #返回一个函数
 

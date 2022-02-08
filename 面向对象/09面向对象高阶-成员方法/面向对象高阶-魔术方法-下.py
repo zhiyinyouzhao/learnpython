@@ -36,14 +36,18 @@ class Demo():
 
     # 可以代替对象使用len函数，并返回一个指定的整形
     def __len__(self):
+        print('触发了__len__方法')
+        #return 5
         return len(self.listurl)
 
     # 可以代替对象进行str或者print的字符串信息返回
     def __str__(self):
+        print('触发了__str__方法')
         return '<这是当前脚本中的一个对象 str>'
 
 
     def __repr__(self):
+        print('触发了__repr__方法')
         return '<这是一个对象 repr>'
 
 
@@ -52,13 +56,15 @@ class Demo():
 
 if __name__ == '__main__':
     obj = Demo()
-    # print(len(obj))
+    print(len(obj))
+    print("==================")
 
-    # print(str(obj))
-    # print(obj)
+    #print(str(obj))
+    print(obj)
+    print("==================")
 
-    # res = repr(obj)
-    # print(res)
-
-    res = bool(obj)
+    res = repr(obj)
     print(res)
+
+    # res = bool(obj)
+    # print(res)

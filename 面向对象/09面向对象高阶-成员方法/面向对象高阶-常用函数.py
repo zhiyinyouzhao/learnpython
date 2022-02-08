@@ -16,14 +16,14 @@ class D(B,C):
 
 
 if __name__ == '__main__':
-    res = issubclass(D,B)
+    res = issubclass(D,B)       #True
     print(res)
     d = D()
-    res1 = isinstance(d,D)
+    res1 = isinstance(d,D)      #True
     print(res1)
-    res2 = hasattr(D,'name')
+    res2 = hasattr(D,'name')    #True
     print(res2)
-    res3 = getattr(d,'name')
+    res3 = getattr(d,'name')    #张三
     print(res3)
     res4 =setattr(d,'name','ooo')
     print(d.name)

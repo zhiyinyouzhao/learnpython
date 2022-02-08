@@ -1,11 +1,8 @@
 
-
 '''
         HuMan
     F           M
         C
-
-
 '''
 
 
@@ -13,7 +10,6 @@ class HuMan():
     num = 444
     def eat(self):
         print('顿顿都是小烧烤')
-
 
 
 class F(HuMan):

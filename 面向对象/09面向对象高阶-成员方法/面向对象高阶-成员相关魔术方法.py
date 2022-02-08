@@ -46,9 +46,13 @@ class Person():
     sex = '性别'
 
     def __init__(self,n,a,s):
+        print("触发__init__方法")
         self.name = n
+        print("1111111111111111")
         self.age = a
+        print("222222222222222222")
         self.sex = s
+        print("3333333333333333")
 
     def say(self):
         print('聊聊人生，谈谈理想')
@@ -71,6 +75,7 @@ class Person():
     #给对象的成员进行赋值操作时会自动触发,注意该方法中如果没有给对象进行赋值，那么对象成员赋值失败
     def __setattr__(self, key, value):
         print('__setattr__:%s,%s' %(key,value))
+        #object.__setattr__(self, key, value)
 
     #当删除对象成员时自动触发
     def __delattr__(self, item):
@@ -78,7 +83,12 @@ class Person():
 
 if __name__ == '__main__':
     zs = Person('张三丰',120,'男')
+    print(zs.name)
+    print("=================")
+    print(zs.a)
+    print("=================")
     zs.abc = 'aabbc'
     print(zs.abc)
+    print("=================")
     del zs.name
     print(zs.name)

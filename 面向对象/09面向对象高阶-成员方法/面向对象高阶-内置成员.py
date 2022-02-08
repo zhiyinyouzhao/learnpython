@@ -15,6 +15,7 @@ class Demo():
 
 if __name__ == '__main__':
     obj = Demo()
+    obj.name = 123
     # 获取类/对象的所属成员
     res = Demo.__dict__
     res1 = obj.__dict__
@@ -28,3 +29,4 @@ if __name__ == '__main__':
     print(res3)
     # 获取当前类的父类列表
     res4 = Demo.__bases__
+    print(res4)

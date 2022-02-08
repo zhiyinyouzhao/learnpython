@@ -24,11 +24,14 @@ class Demo():
         # 3.在创建对象的过程中，判断是否有对象
         if not cls.__obj:
             # 证明没有对象
+            print("没有对象")
             cls.__obj = object.__new__(cls)
+        print("有对象")
         return cls.__obj
 
 
 if __name__ == '__main__':
     a = Demo()
+    print("==============")
     b = Demo()
     print(a,b)

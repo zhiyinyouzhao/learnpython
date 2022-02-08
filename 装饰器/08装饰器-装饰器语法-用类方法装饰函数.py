@@ -4,7 +4,7 @@
 class Outer():
     def newinner(func):
         Outer.func = func               #把传递进来的函数定义为类方法
-        return Outer.inner              #同时返回一个新的类方法
+        return Outer.inner              #同时返回一个新的绑定类方法
 
     def inner():
         print('拿到妹子的微信')

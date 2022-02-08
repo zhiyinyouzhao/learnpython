@@ -42,6 +42,7 @@ class Person():
         print("触发构造方法")
         print(args)
         print(cls)
+        print('====================')
 
         #如果在该方法中没有返回对象，则对象无法创建
         return object.__new__(cls)
@@ -59,4 +60,4 @@ class Person():
 
 if __name__ == '__main__':
     zs = Person('张三丰',180,'男')
-    print(zs)
+    print(zs,type(zs))

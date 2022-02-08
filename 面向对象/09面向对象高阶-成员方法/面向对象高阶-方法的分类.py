@@ -49,10 +49,11 @@ class Demo():
         print('this is static method function func4')
 
 if __name__ == '__main__':
-    #类方法
-    # obj = Demo()
-    # Demo.func1('a')  # 不推荐直接使用类调用对象方法
     #对象方法
+    # obj = Demo()
+    # Demo.func1('a')     # 不推荐直接使用类调用对象方法
+    # obj.func1()
+    #类方法
     # obj1 = Demo()
     # Demo.func2()        #可以使用类直接调用
     # obj1.func2()        #即便使用对象进行调用，传递进去的依然是类
@@ -62,5 +63,5 @@ if __name__ == '__main__':
     # obj3.func3()        #不能使用对象调用绑定类方法
     # 静态方法
     obj4 = Demo()
-    Demo.func4()            # 可以使用类调用绑定类方法
-    obj4.func4()            #可以使用对象调用绑定类方法
+    Demo.func4()            # 可以使用类调用静态方法
+    obj4.func4()            #可以使用对象调用静态方法

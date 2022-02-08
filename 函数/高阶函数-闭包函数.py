@@ -16,12 +16,13 @@ money = 0
 
 def person():
     money = 0
-
+    print(11111111)
     def work():
+        print(222222222)
         nonlocal money      #在内涵数中使用了外函数的临时变量
         money += 100
         print(money)
-
+    print(333333333)
     # 在外函数中返回了内涵数，这个内涵数就是闭包函数
     return work
     # def overtime():
@@ -36,7 +37,8 @@ def person():
 
 if __name__ == '__main__':
     res = person()
-    res()
+    print(4444444444444)
+    print(res,type(res))
     res()
 
 # 如何检测一个函数时否为闭包函数?

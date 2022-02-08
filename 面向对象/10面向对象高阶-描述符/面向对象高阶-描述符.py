@@ -1,7 +1,4 @@
 
-
-
-
 #描述符类
 class PersonName():
     __name = 'abc'
@@ -14,10 +11,11 @@ class PersonName():
     def __set__(self, instance, value):
         print('__set__')
         print(self, instance, value)
+        self.__name = value
 
     def __delete__(self, instance):
         print('__delete__')
-        # print(self, instance)
+        print(self, instance)
 
 
 #普通类
@@ -28,6 +26,10 @@ class Person():
 
 if __name__ == '__main__':
     zs = Person()
+    print(zs.name)
+    print("=================")
     zs.name = '张三'
+    print(zs.name)
+    print("=================")
     del zs.name
     print(zs.name)

@@ -12,7 +12,7 @@ class M():
         print('动作优雅，浅尝辄止')
 
 
-class C(F,M):
+class C(M,F):
     def eat(self):
         super().eat()
         print('吃哭，不吃也哭')
