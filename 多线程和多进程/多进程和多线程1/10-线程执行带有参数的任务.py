@@ -5,13 +5,13 @@ import threading
 import time
 def sing(num):
     for i in range(num):
-        print '唱歌...'
+        print('唱歌...')
         time.sleep(1)
 
 
 def dance(count):
     for i in range(count):
-        print '跳舞...'
+        print('跳舞...')
         time.sleep(1)
 
 if __name__ == '__main__':

@@ -7,9 +7,9 @@ import os
 
 def copy_file(file_name,source_dir,dest_dir):
     #拼接源文件路径和目标文件路径
-    print  source_dir,file_name
+    print(source_dir,file_name)
     source_path = source_dir + '\\' + file_name
-    print  source_path
+    print(source_path)
     dest_path = dest_dir + '\\' + file_name
     #打开源文件和目标文件，循环读取源文件到目标路径
     with open(source_path,'rb') as source_file:
@@ -30,14 +30,12 @@ if __name__ == '__main__':
     try:
         os.mkdir(dest_dir)
     except:
-        print '目标文件夹已存在'
+        print('目标文件夹已存在')
      #3，获取原文件下所有文件
     file_list = os.listdir(source_dir)
-    print 111
-    print file_list
+    print(file_list)
     #4,遍历文件列表实现copy
     for file_name in file_list:
-        print 222
         #5，使用多进程copy
         sub_process = multiprocessing.Process(target=copy_file,args=(file_name,source_dir,dest_dir))
         sub_process.start()
