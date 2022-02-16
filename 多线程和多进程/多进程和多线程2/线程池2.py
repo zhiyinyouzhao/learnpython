@@ -29,7 +29,7 @@ if __name__ == '__main__':
         #在线程池中提交一个任务，线程池如果有空闲线程，则分配一个线程去执行，执行完毕后再将线程交给线程池；如果没有空闲线程，则等待
         #线程池先整体去执行一个任务，任务执行完成后，再执行done函数
         future = pool.submit(task,url)
-        future.add_done_callback(done)  #是
+        future.add_done_callback(done)
     '''
         可以做分工，例如task做下载，done专门讲下载的数据写入本地文件
     '''
