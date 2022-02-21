@@ -1,4 +1,4 @@
-
+from collections.abc import Iterator, Iterable
 
 '''
     map(func,*iterables)
@@ -16,6 +16,8 @@ newlist = []
 l = [1,2,3,4]
 if __name__ == '__main__':
     res = map(str,varlist)
+    #map返回一个迭代器
+    print(isinstance(res,Iterator))
     print(list(res))
 
     res1 = map(lambda x:x**2,l)

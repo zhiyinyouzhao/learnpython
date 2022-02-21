@@ -21,15 +21,17 @@ newlist = [i ** 2 for i in varlist]
 print(newlist)
 '''
 
-#y元组推导式，返回一个生成器
-vart = (1,2,3,4,5,6,7,8,9)
-newt = (i ** 2 for i in vart)
-print(newt)
-# 使用next()函数
-#print(next(newt))
-# 使用list或tuple函数
-print(list(newt))
-print(tuple(newt))
-# 使用for循环遍历
-for i in newt:
-    print(i)
+
+if __name__ == '__main__':
+    #y元组推导式，返回一个生成器
+    vart = (1,2,3,4,5,6,7,8,9)
+    newt = (i ** 2 for i in vart)
+    print(type(newt),newt)
+    # 使用next()函数
+    #print(next(newt))
+    # 使用list或tuple函数
+    # print(list(newt))
+    # print(tuple(newt))
+    # # 使用for循环遍历
+    # for i in newt:
+    #     print(i)

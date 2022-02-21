@@ -1,4 +1,5 @@
-from collections import Iterator, Iterable
+from collections.abc import Iterator, Iterable
+
 '''
     iter()
         功能：把可迭代的对象，转为一个迭代器对象
@@ -6,7 +7,6 @@ from collections import Iterator, Iterable
         返回值：迭代器对象
     注意：迭代器一定是一个可以迭代的对象，但是可迭代对象不一定是迭代器
 '''
-
 
 '''
     迭代器取值特点：
@@ -19,43 +19,39 @@ from collections import Iterator, Iterable
 
 '''
     检测迭代器和可迭代对象的方法
-    from collections import Iterator,Iterable
+    from collections.abc import Iterator, Iterable
 '''
 
+f4 = ['赵四', '刘能', '小沈阳', '海参炒面']
 
-f4 = ['赵四','刘能','小沈阳','海参炒面']
-
-
-#for循环
+# for循环
 for i in f4:
     pass
-    #print(i)
+    # print(i)
+if __name__ == '__main__':
+    # 使用iter（）可以把可迭代对象转为迭代器使用
+    res = iter(f4)
+    print(res, type(res))
+    # 1.使用next()函数去调用迭代器对象
+    # r = next(res)
+    # print(r)
 
-#使用iter（）可以把可迭代对象转为迭代器使用
-# res = iter(f4)
-# print(res,type(res))
-#1.使用next()函数去调用迭代器对象
-# r = next(res)
-# print(r)
+    # 2.list
+    # r = list(res)
+    # print(r,type(r))
 
-# 2.list
-# r = list(res)
-# print(r,type(r))
+    # 3.for
+    # for j in res:
+    #     print(j)
 
-# 3.for
-# for j in res:
-#     print(j)
-#
-#
-varstr = '123456'
-res = iter(varstr)
-#
-r1 = isinstance(varstr,Iterable)    #True
-r2 = isinstance(varstr,Iterator)    #False
-r3 = isinstance(res,Iterable)       #True
-r4 = isinstance(res,Iterator)       #True
-print(r1)
-print(r2)
-print(r3)
-print(r4)
+    varstr = '123456'
+    res = iter(varstr)
 
+    r1 = isinstance(varstr,Iterable)    #True
+    r2 = isinstance(varstr,Iterator)    #False
+    r3 = isinstance(res,Iterable)       #True
+    r4 = isinstance(res,Iterator)       #True
+    print(r1)
+    print(r2)
+    print(r3)
+    print(r4)

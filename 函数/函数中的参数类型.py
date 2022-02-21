@@ -1,6 +1,6 @@
 
 
-# 普通参数，默认参数，收集参数，命名关键字参数，关键字收集参数
+# 普通参数，默认参数，收集参数，关键字参数，命名关键字参数
 
 
 # 普通参数就是位置参数，也叫顺序参数，也是必须传递的参数
@@ -20,6 +20,7 @@ def func(x,y,i=100):
 def func1(a,b,x='+',*args):
     print(type(args))
     print(*args)
+    print(args)
     if x == '+':
         print('加法运算',args)
     else:

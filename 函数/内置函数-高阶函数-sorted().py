@@ -21,8 +21,15 @@ if __name__ == '__main__':
     res1 = sorted(arr)
     res2 = sorted(arr,reverse=True)
     res3 = sorted(arr,key=abs)
-    # print(res3)
+    print("res1:",res1)
+    print("res2:",res2)
+    print("res3:",res3)
+
+
     arr1 = [3,2,4,6,5,7,9]
-    res = sorted(arr1,key=func)
-    res4 = sorted(arr1,key=lambda x:x%2)
-    print(res4)
+    res4 = sorted(arr1,key=func)
+    res5 = sorted(arr1,key=lambda x:x%2)
+    print("res4:",res4)
+    print("res5:",res5)
+
+    print(3%2,2%2,4%2,6%2,5%2,7%2,9%2)

@@ -11,11 +11,17 @@ def outer():
     # 外函数的局部变量
     num = 10
     # 内函数，局部函数，在函数的内部定义的函数
+    print(1111)
     def inner():
+        print(3333)
         nonlocal num  #可以引用上一层函数中定义的局部变量，但依然不能提升为全局变量
         num += 1
         print(num)
+
+    print(22222)
     inner()
+    print(3333333)
 
 if __name__ == '__main__':
+    print(4444444)
     outer()

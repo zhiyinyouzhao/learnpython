@@ -8,6 +8,7 @@
                 2.yield 会把结果返回，并记住当前代码执行的位置，下一次调用时会从上一次离开的位置继续向下执行
 '''
 
+
 '''
 在Python中，一边循环一边计算的机制，称为生成器：generator。
 跟普通函数不同的是，生成器是一个返回迭代器的函数，只能用于迭代操作，更简单点理解生成器就是一个迭代器，生成器本质就是迭代器
@@ -24,23 +25,25 @@ def hello():
     print('haha 3')
     yield 3
 
-#调用一个生成器函数，返回的是一个生成器对象
-res = hello()
-print(res,type(res))
-# r = next(res)
-# print(r)
-# r = next(res)
-# print(r)
-# r = next(res)
-# print(r)
+if __name__ == '__main__':
+
+    #调用一个生成器函数，返回的是一个生成器对象
+    res = hello()
+    print(res,type(res))
+    r = next(res)
+    print(r)
+    r = next(res)
+    print(r)
+    r = next(res)
+    print(r)
 
 # 使用list类似的函数去调用生成器返回的迭代器时，会把迭代器的返回结果，作为容器的元素
 #print(list(res))
 
 #for循环
 
-for n in res:
-    print(n)
+# for n in res:
+#     print(n)
 
 
 '''

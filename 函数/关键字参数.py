@@ -9,6 +9,10 @@ def love(a,b,c=3,*args,name,age,**kwargs):
 
 
 love(1,2,3,112,123,name='aaa',age=222,sex='ccc',aa='aa',bb='bb')
+print("===========================")
+love(1,2,3,112,123,age=222,name='aaa',sex='ccc',aa='aa',bb='bb')
+print("----------------------")
+
 
 #注意形参声明的位置
 #在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用。
