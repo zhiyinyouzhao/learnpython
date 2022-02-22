@@ -83,12 +83,13 @@ class Person():
 
 if __name__ == '__main__':
     zs = Person('张三丰',120,'男')
-    print(zs.name)
-    print("=================")
-    print(zs.a)
+    # print(zs.name)
+    # print("=================")
+    # print(zs.a)
     print("=================")
     zs.abc = 'aabbc'
+    print('----------------')
     print(zs.abc)
     print("=================")
-    del zs.name
-    print(zs.name)
+    # del zs.name
+    # print(zs.name)

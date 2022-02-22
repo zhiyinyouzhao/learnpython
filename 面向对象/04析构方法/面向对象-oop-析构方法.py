@@ -23,9 +23,9 @@ class writeLog():
 
 if __name__ == '__main__':
     #1.
-    # l = writeLog()
-    # l.log("今天天气还不错")
-    # print(',,,,,,,,,,,')
+    l = writeLog()
+    l.log("今天天气还不错")
+    print(',,,,,,,,,,,')
 
     #2
     # l = writeLog()

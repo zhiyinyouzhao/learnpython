@@ -43,7 +43,7 @@ if __name__ == '__main__':
     print(zs)
     print("==================")
     zs.func()
-
+    print("-------------")
     print(zs.name)
     print(Person.name)
     print(Person.func2())

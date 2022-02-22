@@ -1,6 +1,7 @@
 
 #描述符类
 class PersonName():
+    print("333333333333333")
     __name = 'abc'
 
     def __get__(self, instance, owner):
@@ -20,8 +21,10 @@ class PersonName():
 
 #普通类
 class Person():
+    print("111111111111")
     #把类中的一个成员属性交给一个描述符类来实现
     name = PersonName()
+    print("22222222222")
 
 
 if __name__ == '__main__':

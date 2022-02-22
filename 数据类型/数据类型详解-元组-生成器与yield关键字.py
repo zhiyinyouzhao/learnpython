@@ -22,28 +22,28 @@ def hello():
     yield 1
     print('hello 2')
     yield 2
-    print('haha 3')
+    print('hello 3')
     yield 3
 
 if __name__ == '__main__':
 
     #调用一个生成器函数，返回的是一个生成器对象
     res = hello()
-    print(res,type(res))
-    r = next(res)
-    print(r)
-    r = next(res)
-    print(r)
-    r = next(res)
-    print(r)
+    # print(res,type(res))
+    # r = next(res)
+    # print(r)
+    # r = next(res)
+    # print(r)
+    # r = next(res)
+    # print(r)
 
-# 使用list类似的函数去调用生成器返回的迭代器时，会把迭代器的返回结果，作为容器的元素
-#print(list(res))
+    # 使用list类似的函数去调用生成器返回的迭代器时，会把迭代器的返回结果，作为容器的元素
+    print(list(res))
 
-#for循环
+    #for循环
 
-# for n in res:
-#     print(n)
+    # for n in res:
+    #     print(n)
 
 
 '''

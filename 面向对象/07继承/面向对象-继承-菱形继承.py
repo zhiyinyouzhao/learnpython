@@ -39,7 +39,21 @@ class C(F,M):
 if __name__ == '__main__':
     c = C()
     c.eat()
+
+    '''
+        顿顿都是小烧烤
+        444
+        动作优雅，浅尝辄止
+        222
+        大口喝酒，大口吃肉
+        333
+        吃哭，不吃也哭
+        
+        
+        
+    '''
     '''
     C->F->M->H
+    [<class '__main__.C'>, <class '__main__.F'>, <class '__main__.M'>, <class '__main__.HuMan'>, <class 'object'>]
     '''
     print(C.mro())

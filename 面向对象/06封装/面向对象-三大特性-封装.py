@@ -19,11 +19,11 @@ __成员:私有的(可以使用特殊语法获取)
 class Person():
     #成员属性
     name = '姓名'
-    _age = '年龄'
-    __sanwei = '三维'
+    _age = '年龄'         #受保护的
+    __sanwei = '三维'     #私有的
 
     def __init__(self,n,a,s):
-        self.name = a
+        self.name = n
         self._age = a     #_ :受保护的成员
         self.__sanwei = s  #__:私有成员
 
@@ -41,5 +41,10 @@ if __name__ == '__main__':
     ym = Person('杨幂',28,'70 50 60')
     # print(ym.__dict__)    #可以获取当前对象的所有成员信息
     # print(Person.__dict__) #可以获取当前类的所有成员信息
-    print(ym._age)  #在类的外部不能操作，受保护的成员，但python可以
-    ym.kiss()
+    print("=========================")
+    print(ym.name)
+    print(ym._age)
+    # print(ym.__sanwei)
+
+    # print(ym._age)  #在类的外部不能操作，受保护的成员，但python可以
+    # ym.kiss()
