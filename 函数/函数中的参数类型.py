@@ -20,9 +20,11 @@ def func(x,y,i=100):
 def func1(a,b,x='+',*args):
     print(type(args))
     print(*args)
+    print(args)
     if x == '+':
         print('加法运算',args)
     else:
         print('减法运算',args)
 
-func1(1,2,'+',200,300,400)
+if __name__ == '__main__':
+    func1(1, 2, '+', 200, 300, 400)

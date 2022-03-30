@@ -20,7 +20,7 @@ def love(a,b,c=3,*args,name):
     print(name)
 
 
-#love(1,2,3,4,5,6,7,8,9,name='admin')
+love(1,2,3,4,5,6,7,8,9,name='admin')
 
 def person(name,age,*,city,job):
     print(name,age,city,job)

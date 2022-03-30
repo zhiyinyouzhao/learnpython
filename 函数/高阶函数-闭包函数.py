@@ -25,14 +25,6 @@ def person():
     print(333333333)
     # 在外函数中返回了内涵数，这个内涵数就是闭包函数
     return work
-    # def overtime():
-    #     nonlocal money
-    #     money += 200
-    #
-    # def buy():
-    #     nonlocal money
-    #     money -= 50
-    #
 
 
 if __name__ == '__main__':

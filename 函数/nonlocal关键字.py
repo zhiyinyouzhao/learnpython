@@ -6,6 +6,19 @@
     在内函数中如果想使用外层函数的变量，那么需要使用nonlocal 关键字引用
 '''
 
+# name = 'AAA'
+#
+#
+# def func():
+#     name = 'aaa'
+#     # if 1:
+#     #     name = 100
+#     print(name)
+#
+#
+# func()
+# print(name)
+
 
 def outer():
     # 外函数的局部变量

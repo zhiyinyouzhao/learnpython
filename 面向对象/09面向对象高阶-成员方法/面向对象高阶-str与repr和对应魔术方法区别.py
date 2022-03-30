@@ -15,24 +15,23 @@ class Demo():
     def __repr__(self):
         print("2222222222")
         return '123'
-    pass
 
 
 
 if __name__ == '__main__':
-    num = 521
-    r1 = str(num)
-    r2 = repr(num)
-    print(r1,type(r1))
-    print(r2,type(r2))
-    print("==================")
-
-    s = '521'
-    r1 = str(s)
-    r2 = repr(s)
-    print(r1,type(r1))
-    print(r2,type(r2))
-    print("==================")
+    # num = 521
+    # r1 = str(num)
+    # r2 = repr(num)
+    # print(r1,type(r1))
+    # print(r2,type(r2))
+    # print("==================")
+    #
+    # s = '521'
+    # r1 = str(s)
+    # r2 = repr(s)
+    # print(r1,type(r1))
+    # print(r2,type(r2))
+    # print("==================")
 
     obj =Demo()
     print("3333333333333")

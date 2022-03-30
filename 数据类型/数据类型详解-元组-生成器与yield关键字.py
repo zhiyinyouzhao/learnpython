@@ -35,12 +35,11 @@ print(res,type(res))
 # print(r)
 
 # 使用list类似的函数去调用生成器返回的迭代器时，会把迭代器的返回结果，作为容器的元素
-#print(list(res))
+print(list(res))
 
 #for循环
-
-for n in res:
-    print(n)
+# for n in res:
+#     print(n)
 
 
 '''

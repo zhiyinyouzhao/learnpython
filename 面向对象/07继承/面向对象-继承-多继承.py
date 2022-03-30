@@ -20,4 +20,5 @@ class C(M,F):
 
 if __name__ == '__main__':
     c = C()
+    print(C.mro())
     c.eat()

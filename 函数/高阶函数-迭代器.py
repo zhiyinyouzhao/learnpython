@@ -1,4 +1,4 @@
-from collections import Iterator, Iterable
+from collections.abc import Iterator, Iterable
 '''
     iter()
         功能：把可迭代的对象，转为一个迭代器对象
@@ -47,15 +47,42 @@ for i in f4:
 #     print(j)
 #
 #
-varstr = '123456'
-res = iter(varstr)
-#
-r1 = isinstance(varstr,Iterable)    #True
-r2 = isinstance(varstr,Iterator)    #False
-r3 = isinstance(res,Iterable)       #True
-r4 = isinstance(res,Iterator)       #True
-print(r1)
-print(r2)
-print(r3)
-print(r4)
 
+
+# varstr = '123456'
+# res = iter(varstr)
+# #
+# r1 = isinstance(varstr,Iterable)    #True
+# r2 = isinstance(varstr,Iterator)    #False
+# r3 = isinstance(res,Iterable)       #True
+# r4 = isinstance(res,Iterator)       #True
+# print(r1)
+# print(r2)
+# print(r3)
+# print(r4)
+if __name__ == '__main__':
+    # pass
+    varstr = '123456'
+    res = iter(varstr)
+    r1 = isinstance(varstr,Iterable)
+    r2 = isinstance(varstr,Iterator)
+    r3 = isinstance(res,Iterable)
+    r4 = isinstance(res,Iterator)
+    print(r1,r2,r3,r4)
+
+    # t1 = next(res)
+    # print(t1)
+    # t2 = next(res)
+    # print(t2)
+    # t3 = next(res)
+    # print(t3)
+    # t4 = next(res)
+    # print(t4)
+    # t5 = next(res)
+    # print(t5)
+    # t6 = next(res)
+
+    # r = list(res)
+    # print(r,type(r))
+    for i in res:
+        print(i)

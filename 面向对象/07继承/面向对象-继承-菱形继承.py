@@ -35,11 +35,10 @@ class C(F,M):
         print(super().num)
         print('吃哭，不吃也哭')
 
-
 if __name__ == '__main__':
     c = C()
-    c.eat()
     '''
-    C->F->M->H
+    C->F->M->HuMan
     '''
     print(C.mro())
+    c.eat() #''顿顿都是小烧烤''-444-'动作优雅，浅尝辄止'-222--'大口喝酒，大口吃肉'-33333333-'吃哭，不吃也哭'
