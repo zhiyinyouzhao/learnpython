@@ -1,4 +1,4 @@
-
+from collections.abc import Iterator, Iterable
 
 '''
     filter(func,iterable)
@@ -24,6 +24,7 @@ def myfunc(n):
 
 if __name__ == '__main__':
     res = filter(myfunc,varlist)
+    print(type(res),isinstance(res,Iterator))
     print(list(res),type(res))
     it = filter(lambda x: True if x % 2 ==0 else False,varlist)
     print(list(it),type(it))

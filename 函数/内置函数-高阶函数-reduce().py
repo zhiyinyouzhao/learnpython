@@ -1,5 +1,6 @@
 
 from functools import reduce
+from collections.abc import Iterator
 
 '''
    reduce(func,*iterable)

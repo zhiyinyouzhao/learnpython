@@ -21,7 +21,7 @@
 
 
 num = 10
-
+a = 100
 def func():
     print(num)   #在函数内可以获取函数外部的变量
     #num += 20    #在函数内不能直接更改函数外的变量
@@ -32,11 +32,14 @@ def func():
     # print(num)
     global live
     live = 'iliveyou'
-    print(globals())
-    print(locals())
+    global a
+    # print(globals())
+    # print(locals())
 
 
 if __name__ == '__main__':
     func()
+    print(live) #在函数内部使用global关键字定义的变量就是全局变量，任意位置都可以使用
+    print(a)
     # print(globals())
     # print(locals())

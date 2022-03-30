@@ -18,8 +18,8 @@ vars2 = {'尼古拉斯赵四','刘能','小沈阳','宋小宝','都敏俊'}
 
 # res = vars1.intersection(vars2) # 返回交集的结果，新的集合
 # print(res)
-# res = vars1.intersection_update(vars2) # 计算2个集合的相交部分，计算结果重新复制给第一个集合，没有返回值
-# print(res)
+res = vars1.intersection_update(vars2) # 计算2个集合的相交部分，计算结果重新复制给第一个集合，没有返回值
+print(res)
 
 #求两个集合的并集，就是把集合中所有元素集中起来（去除重复）
 # res1 = vars1 | vars2

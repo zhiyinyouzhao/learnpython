@@ -43,6 +43,13 @@ if __name__ == '__main__':
     print(zs)
     print("==================")
     zs.func()
+<<<<<<< HEAD
     # print(zs.name)
     # print(Person.name)
     # print(Person.func2())
+=======
+    print("-------------")
+    print(zs.name)
+    print(Person.name)
+    print(Person.func2())
+>>>>>>> cf93a1682ccf85a8fa07071a1cb416361b68df67

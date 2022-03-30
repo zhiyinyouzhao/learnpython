@@ -34,7 +34,8 @@ def person1(name,age,*args,city,job):
 
 
 person('jack',24,city="Beijing",job="Engineer")
-person1('jack',24,city="Beijing",job="Engineer")
 
-person1('jack',24,8,7,city="Beijing",job="Engineer")
+# person1('jack',24,city="Beijing",job="Engineer")
+#
+# person1('jack',24,8,7,city="Beijing",job="Engineer")
 

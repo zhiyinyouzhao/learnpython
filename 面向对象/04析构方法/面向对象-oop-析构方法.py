@@ -22,7 +22,11 @@ class writeLog():
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     # 1.
+=======
+    #1.
+>>>>>>> cf93a1682ccf85a8fa07071a1cb416361b68df67
     l = writeLog()
     l.log("今天天气还不错")
     print(',,,,,,,,,,,')
