@@ -29,5 +29,5 @@ if __name__ == '__main__':
     res = reduce(func,varlist)
     print(res,type(res))
 
-    res1 = reduce(func1,s)
-    print(res1, type(res1))
+    # res1 = reduce(func1,s)
+    # print(res1, type(res1))

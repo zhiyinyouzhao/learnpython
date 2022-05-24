@@ -1,8 +1,4 @@
 from collections.abc import Iterator, Iterable
-<<<<<<< HEAD
-=======
-
->>>>>>> cf93a1682ccf85a8fa07071a1cb416361b68df67
 '''
     iter()
         功能：把可迭代的对象，转为一个迭代器对象
@@ -30,7 +26,6 @@ f4 = ['赵四', '刘能', '小沈阳', '海参炒面']
 # for循环
 for i in f4:
     pass
-<<<<<<< HEAD
     #print(i)
 
 #使用iter（）可以把可迭代对象转为迭代器使用
@@ -88,7 +83,6 @@ if __name__ == '__main__':
     # print(r,type(r))
     for i in res:
         print(i)
-=======
     # print(i)
 if __name__ == '__main__':
     # 使用iter（）可以把可迭代对象转为迭代器使用
@@ -117,4 +111,3 @@ if __name__ == '__main__':
     print(r2)
     print(r3)
     print(r4)
->>>>>>> cf93a1682ccf85a8fa07071a1cb416361b68df67
