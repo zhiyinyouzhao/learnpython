@@ -20,7 +20,6 @@ def sing():
         print('唱歌...')
         time.sleep(1)
 
-
 def dance():
     for i in range(3):
         print('跳舞...')

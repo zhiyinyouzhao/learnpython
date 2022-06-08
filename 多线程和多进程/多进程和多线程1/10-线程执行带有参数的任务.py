@@ -16,7 +16,7 @@ def dance(count):
 
 if __name__ == '__main__':
    sing_thread = threading.Thread(target=sing,args=(3,))
-   dance_thread = threading.Thread(target=dance,kwargs={'count':3})
+   dance_thread = threading.Thread(target=dance,kwargs={'count':2})
 
    sing_thread.start()
    dance_thread.start()

@@ -18,5 +18,6 @@ def work():
 if __name__ == '__main__':
     work_process = multiprocessing.Process(target=work)
     work_process.start()
+    #主进程等待一秒
     time.sleep(1)
     print('主进程执行完了...')
